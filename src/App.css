@@ -20,17 +20,14 @@ body {
 }
 
 .main-image {
-  grid-area: "image";
-  background-color: red;
+  grid-area: image;
+  background-image: url("./e7703e97-7b12-42f3-96f8-2267ed6f0f72.jpg");
+  background-position: top center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-.sidebar {
-  grid-area: "sidebar";
+.sidebar-container {
+  grid-area: sidebar;
   background-color: blue;
-}
-
-.slider-container {
-  background-color: chartreuse;
-  padding: 20px;
-  margin-top: 20px;
 }

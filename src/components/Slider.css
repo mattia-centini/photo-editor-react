@@ -1,0 +1,11 @@
+.slider-container {
+  grid-area: slider;
+  background-color: chartreuse;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.slider {
+  width: 100%;
+  cursor: pointer;
+}
