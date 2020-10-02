@@ -1,0 +1,6 @@
+.sidebar-item {
+  outline: none;
+  border: none;
+  background-color: yellow;
+  cursor: pointer;
+}
