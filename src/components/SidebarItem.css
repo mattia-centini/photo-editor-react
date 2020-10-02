@@ -3,4 +3,26 @@
   border: none;
   background-color: yellow;
   cursor: pointer;
+  padding: 20px;
+  position: relative;
+  transition: ease background-color 1500ms;
+}
+
+.sidebar-item:hover,
+.sidebar-item:focus {
+  background-color: rgb(247, 224, 18);
+}
+
+.sidebar-item.active {
+  background-color: rgb(148, 247, 18);
+}
+
+.sidebar-item::after {
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  bottom: 0;
+  content: "";
+  height: 1px;
+  background-color: red;
 }
