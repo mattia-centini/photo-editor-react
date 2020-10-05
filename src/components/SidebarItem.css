@@ -14,7 +14,7 @@
 }
 
 .sidebar-item.active {
-  background-color: rgb(148, 247, 18);
+  background-color: rgb(18, 247, 209);
 }
 
 .sidebar-item::after {

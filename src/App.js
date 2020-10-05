@@ -90,8 +90,9 @@ function App() {
           return (
             <SidebarItem
               key={index}
-              name={options.name}
+              name={option.name}
               active={index === selectedOptionIndex}
+              handleClick={() => setSelectedOptionIndex(index)}
             />
           );
         })}
