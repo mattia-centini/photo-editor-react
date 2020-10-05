@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Slider from "./components/Slider";
 import SidebarItem from "./components/SidebarItem";
@@ -78,12 +78,23 @@ const DEFAULT_OPTIONS = [
 ];
 
 function App() {
+  const [options, setOptions] = useState(DEFAULT_OPTIONS);
+  const [selectedOptionIndex, setSelectedOptionIndex] = useState(0);
+  const selectedOption = options[selectedOptionIndex];
+
   return (
     <div className="container">
       <div className="main-image"></div>
       <div className="sidebar-container">
-        <SidebarItem />
-        <SidebarItem />
+        {options.map((option, index) => {
+          return (
+            <SidebarItem
+              key={index}
+              name={options.name}
+              active={index === selectedOptionIndex}
+            />
+          );
+        })}
       </div>
       <Slider />
     </div>
